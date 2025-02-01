@@ -1,0 +1,1563 @@
+[
+  {
+    "formId": "321",
+    "formName": "Dynamic Survey Form 1 (One page with all the questions)",
+    "formDescription": "A sample form with various field types.",
+    "typeOfListing": "all-question",
+    "time": "00:07:00",
+    "languages": [
+      { "languageId": "en", "label": "English" },
+      { "languageId": "es", "label": "Spanish" },
+      { "languageId": "fr", "label": "French" }
+    ],
+    "initialFields": [
+      {
+        "type": "textbox",
+        "label": "Full Name",
+        "translations": {
+          "es": "Nombre completo",
+          "fr": "Nom complet"
+        },
+        "placeholder": "Enter your full name",
+        "translationsPlaceholder": {
+          "es": "Ingresa tu nombre completo",
+          "fr": "Entrez votre nom complet"
+        },
+        "required": true,
+        "fieldId": "fullName",
+        "questionId": "q1"
+      },
+      {
+        "type": "email",
+        "label": "Email Address",
+        "translations": {
+          "es": "Dirección de correo electrónico",
+          "fr": "Adresse e-mail"
+        },
+        "placeholder": "Enter your email",
+        "translationsPlaceholder": {
+          "es": "Ingresa tu correo electrónico",
+          "fr": "Entrez votre adresse e-mail"
+        },
+        "required": true,
+        "fieldId": "emailAddress",
+        "questionId": "q2"
+      },
+      {
+        "type": "date",
+        "label": "Date of Birth",
+        "translations": {
+          "es": "Fecha de nacimiento",
+          "fr": "Date de naissance"
+        },
+        "placeholder": "Select your date of birth",
+        "translationsPlaceholder": {
+          "es": "Selecciona tu fecha de nacimiento",
+          "fr": "Sélectionnez votre date de naissance"
+        },
+        "required": true,
+        "fieldId": "dateOfBirth",
+        "questionId": "q3"
+      },
+      {
+        "type": "radio",
+        "label": "Gender",
+        "translations": {
+          "es": "Género",
+          "fr": "Genre"
+        },
+        "options": [
+          {
+            "id": "option1",
+            "label": "Male",
+            "translations": { "es": "Hombre", "fr": "Homme" }
+          },
+          {
+            "id": "option2",
+            "label": "Female",
+            "translations": { "es": "Mujer", "fr": "Femme" }
+          },
+          {
+            "id": "option3",
+            "label": "Other",
+            "translations": { "es": "Otro", "fr": "Autre" }
+          }
+        ],
+        "required": true,
+        "fieldId": "gender",
+        "questionId": "q4"
+      },
+      {
+        "type": "selectbox",
+        "label": "Preferred Language",
+        "translations": {
+          "es": "Idioma preferido",
+          "fr": "Langue préférée"
+        },
+        "options": [
+          {
+            "id": "option1",
+            "label": "English",
+            "translations": { "es": "Inglés", "fr": "Anglais" }
+          },
+          {
+            "id": "option2",
+            "label": "Spanish",
+            "translations": { "es": "Español", "fr": "Espagnol" }
+          },
+          {
+            "id": "option3",
+            "label": "French",
+            "translations": { "es": "Francés", "fr": "Français" }
+          }
+        ],
+        "placeholder": "Select your preferred language",
+        "translationsPlaceholder": {
+          "es": "Selecciona tu idioma preferido",
+          "fr": "Sélectionnez votre langue préférée"
+        },
+        "required": true,
+        "fieldId": "preferredLanguage",
+        "questionId": "q5"
+      },
+      {
+        "type": "checkbox",
+        "label": "Agree to Terms and Conditions",
+        "translations": {
+          "es": "Aceptar los términos y condiciones",
+          "fr": "Accepter les termes et conditions"
+        },
+        "options": [
+          {
+            "id": "option1",
+            "label": "I agree",
+            "translations": {
+              "es": "Estoy de acuerdo",
+              "fr": "Je suis d'accord"
+            }
+          }
+        ],
+        "required": true,
+        "fieldId": "termsAgreement",
+        "questionId": "q6"
+      }
+    ],
+    "sections": [
+      {
+        "sectionId": 1,
+        "sectionName": "Basic"
+      },
+      {
+        "sectionId": 2,
+        "sectionName": "Basic 2"
+      },
+      {
+        "sectionId": 3,
+        "sectionName": "Basic 3"
+      }
+    ],
+    "fields": [
+      {
+        "sectionId": 2,
+        "type": "matrix__feedcheckback",
+        "label": "Skills Assessment",
+        "translations": {
+          "es": "Evaluación de habilidades",
+          "fr": "Évaluation des compétences"
+        },
+        "rows": [
+          {
+            "id": "row1",
+            "label": "JavaScript",
+            "translations": { "es": "JavaScript", "fr": "JavaScript" }
+          },
+          {
+            "id": "row2",
+            "label": "Python",
+            "translations": { "es": "Python", "fr": "Python" }
+          },
+          {
+            "id": "row3",
+            "label": "React",
+            "translations": { "es": "React", "fr": "React" }
+          },
+          {
+            "id": "row4",
+            "label": "PHP",
+            "translations": { "es": "PHP", "fr": "PHP" }
+          }
+        ],
+        "columns": [
+          {
+            "id": "col1",
+            "label": "Beginner",
+            "translations": { "es": "Principiante", "fr": "Débutant" }
+          },
+          {
+            "id": "col2",
+            "label": "Intermediate",
+            "translations": { "es": "Intermedio", "fr": "Intermédiaire" }
+          },
+          {
+            "id": "col3",
+            "label": "Advanced",
+            "translations": { "es": "Avanzado", "fr": "Avancé" }
+          }
+        ],
+        "required": true,
+        "fieldId": "skillsAssessment4",
+        "questionId": "q34"
+      },
+
+      {
+        "sectionId": 2,
+        "type": "matrix_radio_feedback",
+        "label": "Skills Assessment",
+        "translations": {
+          "es": "Evaluación de habilidades",
+          "fr": "Évaluation des compétences"
+        },
+        "rows": [
+          {
+            "id": "row1",
+            "label": "JavaScript",
+            "translations": { "es": "JavaScript", "fr": "JavaScript" }
+          },
+          {
+            "id": "row2",
+            "label": "Python",
+            "translations": { "es": "Python", "fr": "Python" }
+          },
+          {
+            "id": "row3",
+            "label": "React",
+            "translations": { "es": "React", "fr": "React" }
+          },
+          {
+            "id": "row4",
+            "label": "PHP",
+            "translations": { "es": "PHP", "fr": "PHP" }
+          }
+        ],
+        "columns": [
+          {
+            "id": "col1",
+            "label": "Beginner",
+            "translations": { "es": "Principiante", "fr": "Débutant" }
+          },
+          {
+            "id": "col2",
+            "label": "Intermediate",
+            "translations": { "es": "Intermedio", "fr": "Intermédiaire" }
+          },
+          {
+            "id": "col3",
+            "label": "Advanced",
+            "translations": { "es": "Avanzado", "fr": "Avancé" }
+          }
+        ],
+        "required": true,
+        "fieldId": "skillsAssessment3",
+        "questionId": "q33"
+      },
+
+      {
+        "sectionId": 2,
+        "type": "matrix_radio",
+        "label": "Skills Assessment",
+        "translations": {
+          "es": "Evaluación de habilidades",
+          "fr": "Évaluation des compétences"
+        },
+        "rows": [
+          {
+            "id": "row1",
+            "label": "JavaScript",
+            "translations": { "es": "JavaScript", "fr": "JavaScript" }
+          },
+          {
+            "id": "row2",
+            "label": "Python",
+            "translations": { "es": "Python", "fr": "Python" }
+          },
+          {
+            "id": "row3",
+            "label": "React",
+            "translations": { "es": "React", "fr": "React" }
+          },
+          {
+            "id": "row4",
+            "label": "PHP",
+            "translations": { "es": "PHP", "fr": "PHP" }
+          }
+        ],
+        "columns": [
+          {
+            "id": "col1",
+            "label": "Beginner",
+            "translations": { "es": "Principiante", "fr": "Débutant" }
+          },
+          {
+            "id": "col2",
+            "label": "Intermediate",
+            "translations": { "es": "Intermedio", "fr": "Intermédiaire" }
+          },
+          {
+            "id": "col3",
+            "label": "Advanced",
+            "translations": { "es": "Avanzado", "fr": "Avancé" }
+          }
+        ],
+        "required": true,
+        "fieldId": "skillsAssessment2",
+        "questionId": "q32"
+      },
+
+      {
+        "sectionId": 2,
+        "type": "matrix_checkbox",
+        "label": "Skills Assessment",
+        "translations": {
+          "es": "Evaluación de habilidades",
+          "fr": "Évaluation des compétences"
+        },
+        "rows": [
+          {
+            "id": "row1",
+            "label": "JavaScript",
+            "translations": { "es": "JavaScript", "fr": "JavaScript" }
+          },
+          {
+            "id": "row2",
+            "label": "Python",
+            "translations": { "es": "Python", "fr": "Python" }
+          },
+          {
+            "id": "row3",
+            "label": "React",
+            "translations": { "es": "React", "fr": "React" }
+          },
+          {
+            "id": "row4",
+            "label": "PHP",
+            "translations": { "es": "PHP", "fr": "PHP" }
+          }
+        ],
+        "columns": [
+          {
+            "id": "col1",
+            "label": "Beginner",
+            "translations": { "es": "Principiante", "fr": "Débutant" }
+          },
+          {
+            "id": "col2",
+            "label": "Intermediate",
+            "translations": { "es": "Intermedio", "fr": "Intermédiaire" }
+          },
+          {
+            "id": "col3",
+            "label": "Advanced",
+            "translations": { "es": "Avanzado", "fr": "Avancé" }
+          }
+        ],
+        "required": true,
+        "fieldId": "skillsAssessment",
+        "questionId": "q7"
+      },
+
+      {
+        "sectionId": 1,
+        "type": "textbox",
+        "label": "What is the agreement?",
+        "translations": {
+          "es": "Nombre completo",
+          "fr": "Nom complet"
+        },
+        "placeholder": "placeholder text",
+        "translationsPlaceholder": {
+          "es": "Ingresa tu nombre completo",
+          "fr": "Entrez votre nom complet"
+        },
+        "required": true,
+        "fieldId": "agreement",
+        "questionId": "q1"
+      },
+      {
+        "sectionId": 1,
+        "type": "email",
+        "label": "Work Email Address",
+        "translations": {
+          "es": "Dirección de correo electrónico",
+          "fr": "Adresse e-mail"
+        },
+        "placeholder": "Enter your work email",
+        "translationsPlaceholder": {
+          "es": "Ingresa tu correo electrónico",
+          "fr": "Entrez votre adresse e-mail"
+        },
+        "required": true,
+        "fieldId": "emailAddress",
+        "questionId": "q2"
+      },
+      {
+        "sectionId": 2,
+        "type": "radio",
+        "label": "Marriage Status",
+        "translations": {
+          "es": "Género",
+          "fr": "Genre"
+        },
+        "options": [
+          {
+            "id": "option1",
+            "label": "Single",
+            "translations": { "es": "Hombre", "fr": "Homme" }
+          },
+          {
+            "id": "option2",
+            "label": "Married",
+            "translations": { "es": "Mujer", "fr": "Femme" }
+          },
+          {
+            "id": "option3",
+            "label": "Other",
+            "translations": { "es": "Otro", "fr": "Autre" }
+          }
+        ],
+        "required": true,
+        "fieldId": "marriageStatus",
+        "questionId": "q3"
+      },
+      {
+        "sectionId": 2,
+        "type": "checkbox",
+        "label": "Hobbies",
+        "translations": {
+          "es": "Aficiones",
+          "fr": "Loisirs"
+        },
+        "options": [
+          {
+            "id": "option1",
+            "label": "Reading",
+            "translations": { "es": "Lectura", "fr": "Lecture" }
+          },
+          {
+            "id": "option2",
+            "label": "Traveling",
+            "translations": { "es": "Viajar", "fr": "Voyager" }
+          },
+          {
+            "id": "option3",
+            "label": "Sports",
+            "translations": { "es": "Deportes", "fr": "Sports" }
+          },
+          {
+            "id": "option4",
+            "label": "Music",
+            "translations": { "es": "Música", "fr": "Musique" }
+          }
+        ],
+        "required": false,
+        "fieldId": "hobbies",
+        "questionId": "q4"
+      },
+      {
+        "sectionId": 3,
+        "type": "selectbox",
+        "label": "Country",
+        "translations": {
+          "es": "País",
+          "fr": "Pays"
+        },
+        "options": [
+          {
+            "id": "option1",
+            "label": "United States",
+            "translations": { "es": "Estados Unidos", "fr": "États-Unis" }
+          },
+          {
+            "id": "option2",
+            "label": "Canada",
+            "translations": { "es": "Canadá", "fr": "Canada" }
+          },
+          {
+            "id": "option3",
+            "label": "United Kingdom",
+            "translations": { "es": "Reino Unido", "fr": "Royaume-Uni" }
+          },
+          {
+            "id": "option4",
+            "label": "Australia",
+            "translations": { "es": "Australia", "fr": "Australie" }
+          }
+        ],
+        "placeholder": "Select your country",
+        "translationsPlaceholder": {
+          "es": "Selecciona tu país",
+          "fr": "Sélectionnez votre pays"
+        },
+        "required": true,
+        "fieldId": "country",
+        "questionId": "q5"
+      },
+      {
+        "sectionId": 3,
+        "type": "textarea",
+        "label": "About Yourself",
+        "translations": {
+          "es": "Sobre ti",
+          "fr": "À propos de vous"
+        },
+        "placeholder": "Tell us something about yourself",
+        "translationsPlaceholder": {
+          "es": "Cuéntanos algo sobre ti",
+          "fr": "Parlez-nous de vous"
+        },
+        "required": false,
+        "fieldId": "aboutYourself",
+        "questionId": "q6"
+      }
+    ]
+  },
+
+  {
+    "formId": "322",
+    "formName": "Dynamic Survey Form 2 (One page per section)",
+    "formDescription": "A sample form with various field types.",
+    "typeOfListing": "one-page-per-section",
+    "time": "00:08:00",
+    "languages": [
+      { "languageId": "en", "label": "English" },
+      { "languageId": "es", "label": "Spanish" },
+      { "languageId": "fr", "label": "French" }
+    ],
+    "initialFields": [
+      {
+        "type": "textbox",
+        "label": "Full Name",
+        "translations": {
+          "es": "Nombre completo",
+          "fr": "Nom complet"
+        },
+        "placeholder": "Enter your full name",
+        "translationsPlaceholder": {
+          "es": "Ingresa tu nombre completo",
+          "fr": "Entrez votre nom complet"
+        },
+        "required": true,
+        "fieldId": "fullName",
+        "questionId": "q1"
+      },
+      {
+        "type": "email",
+        "label": "Email Address",
+        "translations": {
+          "es": "Dirección de correo electrónico",
+          "fr": "Adresse e-mail"
+        },
+        "placeholder": "Enter your email",
+        "translationsPlaceholder": {
+          "es": "Ingresa tu correo electrónico",
+          "fr": "Entrez votre adresse e-mail"
+        },
+        "required": true,
+        "fieldId": "emailAddress",
+        "questionId": "q2"
+      },
+      {
+        "type": "date",
+        "label": "Date of Birth",
+        "translations": {
+          "es": "Fecha de nacimiento",
+          "fr": "Date de naissance"
+        },
+        "placeholder": "Select your date of birth",
+        "translationsPlaceholder": {
+          "es": "Selecciona tu fecha de nacimiento",
+          "fr": "Sélectionnez votre date de naissance"
+        },
+        "required": true,
+        "fieldId": "dateOfBirth",
+        "questionId": "q3"
+      },
+      {
+        "type": "radio",
+        "label": "Gender",
+        "translations": {
+          "es": "Género",
+          "fr": "Genre"
+        },
+        "options": [
+          {
+            "id": "option1",
+            "label": "Male",
+            "translations": { "es": "Hombre", "fr": "Homme" }
+          },
+          {
+            "id": "option2",
+            "label": "Female",
+            "translations": { "es": "Mujer", "fr": "Femme" }
+          },
+          {
+            "id": "option3",
+            "label": "Other",
+            "translations": { "es": "Otro", "fr": "Autre" }
+          }
+        ],
+        "required": true,
+        "fieldId": "gender",
+        "questionId": "q4"
+      },
+      {
+        "type": "selectbox",
+        "label": "Preferred Language",
+        "translations": {
+          "es": "Idioma preferido",
+          "fr": "Langue préférée"
+        },
+        "options": [
+          {
+            "id": "option1",
+            "label": "English",
+            "translations": { "es": "Inglés", "fr": "Anglais" }
+          },
+          {
+            "id": "option2",
+            "label": "Spanish",
+            "translations": { "es": "Español", "fr": "Espagnol" }
+          },
+          {
+            "id": "option3",
+            "label": "French",
+            "translations": { "es": "Francés", "fr": "Français" }
+          }
+        ],
+        "placeholder": "Select your preferred language",
+        "translationsPlaceholder": {
+          "es": "Selecciona tu idioma preferido",
+          "fr": "Sélectionnez votre langue préférée"
+        },
+        "required": true,
+        "fieldId": "preferredLanguage",
+        "questionId": "q5"
+      },
+      {
+        "type": "checkbox",
+        "label": "Agree to Terms and Conditions",
+        "translations": {
+          "es": "Aceptar los términos y condiciones",
+          "fr": "Accepter les termes et conditions"
+        },
+        "options": [
+          {
+            "id": "option1",
+            "label": "I agree",
+            "translations": {
+              "es": "Estoy de acuerdo",
+              "fr": "Je suis d'accord"
+            }
+          }
+        ],
+        "required": true,
+        "fieldId": "termsAgreement",
+        "questionId": "q6"
+      }
+    ],
+    "sections": [
+      {
+        "sectionId": 1,
+        "sectionName": "Basic"
+      },
+      {
+        "sectionId": 2,
+        "sectionName": "Basic 2"
+      },
+      {
+        "sectionId": 3,
+        "sectionName": "Basic 3"
+      }
+    ],
+    "fields": [
+      {
+        "sectionId": 2,
+        "type": "matrix__feedcheckback",
+        "label": "Skills Assessment",
+        "translations": {
+          "es": "Evaluación de habilidades",
+          "fr": "Évaluation des compétences"
+        },
+        "rows": [
+          {
+            "id": "row1",
+            "label": "JavaScript",
+            "translations": { "es": "JavaScript", "fr": "JavaScript" }
+          },
+          {
+            "id": "row2",
+            "label": "Python",
+            "translations": { "es": "Python", "fr": "Python" }
+          },
+          {
+            "id": "row3",
+            "label": "React",
+            "translations": { "es": "React", "fr": "React" }
+          },
+          {
+            "id": "row4",
+            "label": "PHP",
+            "translations": { "es": "PHP", "fr": "PHP" }
+          }
+        ],
+        "columns": [
+          {
+            "id": "col1",
+            "label": "Beginner",
+            "translations": { "es": "Principiante", "fr": "Débutant" }
+          },
+          {
+            "id": "col2",
+            "label": "Intermediate",
+            "translations": { "es": "Intermedio", "fr": "Intermédiaire" }
+          },
+          {
+            "id": "col3",
+            "label": "Advanced",
+            "translations": { "es": "Avanzado", "fr": "Avancé" }
+          }
+        ],
+        "required": true,
+        "fieldId": "skillsAssessment4",
+        "questionId": "q34"
+      },
+      {
+        "sectionId": 2,
+        "type": "matrix_radio_feedback",
+        "label": "Skills Assessment",
+        "translations": {
+          "es": "Evaluación de habilidades",
+          "fr": "Évaluation des compétences"
+        },
+        "rows": [
+          {
+            "id": "row1",
+            "label": "JavaScript",
+            "translations": { "es": "JavaScript", "fr": "JavaScript" }
+          },
+          {
+            "id": "row2",
+            "label": "Python",
+            "translations": { "es": "Python", "fr": "Python" }
+          },
+          {
+            "id": "row3",
+            "label": "React",
+            "translations": { "es": "React", "fr": "React" }
+          },
+          {
+            "id": "row4",
+            "label": "PHP",
+            "translations": { "es": "PHP", "fr": "PHP" }
+          }
+        ],
+        "columns": [
+          {
+            "id": "col1",
+            "label": "Beginner",
+            "translations": { "es": "Principiante", "fr": "Débutant" }
+          },
+          {
+            "id": "col2",
+            "label": "Intermediate",
+            "translations": { "es": "Intermedio", "fr": "Intermédiaire" }
+          },
+          {
+            "id": "col3",
+            "label": "Advanced",
+            "translations": { "es": "Avanzado", "fr": "Avancé" }
+          }
+        ],
+        "required": true,
+        "fieldId": "skillsAssessment3",
+        "questionId": "q33"
+      },
+      {
+        "sectionId": 2,
+        "type": "matrix_radio",
+        "label": "Skills Assessment",
+        "translations": {
+          "es": "Evaluación de habilidades",
+          "fr": "Évaluation des compétences"
+        },
+        "rows": [
+          {
+            "id": "row1",
+            "label": "JavaScript",
+            "translations": { "es": "JavaScript", "fr": "JavaScript" }
+          },
+          {
+            "id": "row2",
+            "label": "Python",
+            "translations": { "es": "Python", "fr": "Python" }
+          },
+          {
+            "id": "row3",
+            "label": "React",
+            "translations": { "es": "React", "fr": "React" }
+          },
+          {
+            "id": "row4",
+            "label": "PHP",
+            "translations": { "es": "PHP", "fr": "PHP" }
+          }
+        ],
+        "columns": [
+          {
+            "id": "col1",
+            "label": "Beginner",
+            "translations": { "es": "Principiante", "fr": "Débutant" }
+          },
+          {
+            "id": "col2",
+            "label": "Intermediate",
+            "translations": { "es": "Intermedio", "fr": "Intermédiaire" }
+          },
+          {
+            "id": "col3",
+            "label": "Advanced",
+            "translations": { "es": "Avanzado", "fr": "Avancé" }
+          }
+        ],
+        "required": true,
+        "fieldId": "skillsAssessment2",
+        "questionId": "q32"
+      },
+      {
+        "sectionId": 2,
+        "type": "matrix_checkbox",
+        "label": "Skills Assessment",
+        "translations": {
+          "es": "Evaluación de habilidades",
+          "fr": "Évaluation des compétences"
+        },
+        "rows": [
+          {
+            "id": "row1",
+            "label": "JavaScript",
+            "translations": { "es": "JavaScript", "fr": "JavaScript" }
+          },
+          {
+            "id": "row2",
+            "label": "Python",
+            "translations": { "es": "Python", "fr": "Python" }
+          },
+          {
+            "id": "row3",
+            "label": "React",
+            "translations": { "es": "React", "fr": "React" }
+          },
+          {
+            "id": "row4",
+            "label": "PHP",
+            "translations": { "es": "PHP", "fr": "PHP" }
+          }
+        ],
+        "columns": [
+          {
+            "id": "col1",
+            "label": "Beginner",
+            "translations": { "es": "Principiante", "fr": "Débutant" }
+          },
+          {
+            "id": "col2",
+            "label": "Intermediate",
+            "translations": { "es": "Intermedio", "fr": "Intermédiaire" }
+          },
+          {
+            "id": "col3",
+            "label": "Advanced",
+            "translations": { "es": "Avanzado", "fr": "Avancé" }
+          }
+        ],
+        "required": true,
+        "fieldId": "skillsAssessment",
+        "questionId": "q7"
+      },
+      {
+        "sectionId": 1,
+        "type": "textbox",
+        "label": "What is the agreement?",
+        "translations": {
+          "es": "Nombre completo",
+          "fr": "Nom complet"
+        },
+        "placeholder": "placeholder text",
+        "translationsPlaceholder": {
+          "es": "Ingresa tu nombre completo",
+          "fr": "Entrez votre nom complet"
+        },
+        "required": true,
+        "fieldId": "agreement",
+        "questionId": "q1"
+      },
+      {
+        "sectionId": 1,
+        "type": "email",
+        "label": "Work Email Address",
+        "translations": {
+          "es": "Dirección de correo electrónico",
+          "fr": "Adresse e-mail"
+        },
+        "placeholder": "Enter your work email",
+        "translationsPlaceholder": {
+          "es": "Ingresa tu correo electrónico",
+          "fr": "Entrez votre adresse e-mail"
+        },
+        "required": true,
+        "fieldId": "emailAddress",
+        "questionId": "q2"
+      },
+      {
+        "sectionId": 2,
+        "type": "radio",
+        "label": "Marriage Status",
+        "translations": {
+          "es": "Género",
+          "fr": "Genre"
+        },
+        "options": [
+          {
+            "id": "option1",
+            "label": "Single",
+            "translations": { "es": "Hombre", "fr": "Homme" }
+          },
+          {
+            "id": "option2",
+            "label": "Married",
+            "translations": { "es": "Mujer", "fr": "Femme" }
+          },
+          {
+            "id": "option3",
+            "label": "Other",
+            "translations": { "es": "Otro", "fr": "Autre" }
+          }
+        ],
+        "required": true,
+        "fieldId": "marriageStatus",
+        "questionId": "q3"
+      },
+      {
+        "sectionId": 2,
+        "type": "checkbox",
+        "label": "Hobbies",
+        "translations": {
+          "es": "Aficiones",
+          "fr": "Loisirs"
+        },
+        "options": [
+          {
+            "id": "option1",
+            "label": "Reading",
+            "translations": { "es": "Lectura", "fr": "Lecture" }
+          },
+          {
+            "id": "option2",
+            "label": "Traveling",
+            "translations": { "es": "Viajar", "fr": "Voyager" }
+          },
+          {
+            "id": "option3",
+            "label": "Sports",
+            "translations": { "es": "Deportes", "fr": "Sports" }
+          },
+          {
+            "id": "option4",
+            "label": "Music",
+            "translations": { "es": "Música", "fr": "Musique" }
+          }
+        ],
+        "required": false,
+        "fieldId": "hobbies",
+        "questionId": "q4"
+      },
+      {
+        "sectionId": 3,
+        "type": "selectbox",
+        "label": "Country",
+        "translations": {
+          "es": "País",
+          "fr": "Pays"
+        },
+        "options": [
+          {
+            "id": "option1",
+            "label": "United States",
+            "translations": { "es": "Estados Unidos", "fr": "États-Unis" }
+          },
+          {
+            "id": "option2",
+            "label": "Canada",
+            "translations": { "es": "Canadá", "fr": "Canada" }
+          },
+          {
+            "id": "option3",
+            "label": "United Kingdom",
+            "translations": { "es": "Reino Unido", "fr": "Royaume-Uni" }
+          },
+          {
+            "id": "option4",
+            "label": "Australia",
+            "translations": { "es": "Australia", "fr": "Australie" }
+          }
+        ],
+        "placeholder": "Select your country",
+        "translationsPlaceholder": {
+          "es": "Selecciona tu país",
+          "fr": "Sélectionnez votre pays"
+        },
+        "required": true,
+        "fieldId": "country",
+        "questionId": "q5"
+      },
+      {
+        "sectionId": 3,
+        "type": "textarea",
+        "label": "About Yourself",
+        "translations": {
+          "es": "Sobre ti",
+          "fr": "À propos de vous"
+        },
+        "placeholder": "Tell us something about yourself",
+        "translationsPlaceholder": {
+          "es": "Cuéntanos algo sobre ti",
+          "fr": "Parlez-nous de vous"
+        },
+        "required": false,
+        "fieldId": "aboutYourself",
+        "questionId": "q6"
+      }
+    ]
+  },
+
+  {
+    "formId": "323",
+    "formName": "Dynamic Survey Form 3 (One page per question)",
+    "formDescription": "A sample form with various field types.",
+    "typeOfListing": "one-page-per-question",
+    "time": "00:10:00",
+    "languages": [
+      { "languageId": "en", "label": "English" },
+      { "languageId": "es", "label": "Spanish" },
+      { "languageId": "fr", "label": "French" }
+    ],
+    "initialFields": [
+      {
+        "type": "textbox",
+        "label": "Full Name",
+        "translations": {
+          "es": "Nombre completo",
+          "fr": "Nom complet"
+        },
+        "placeholder": "Enter your full name",
+        "translationsPlaceholder": {
+          "es": "Ingresa tu nombre completo",
+          "fr": "Entrez votre nom complet"
+        },
+        "required": true,
+        "fieldId": "fullName",
+        "questionId": "q1"
+      },
+      {
+        "type": "email",
+        "label": "Email Address",
+        "translations": {
+          "es": "Dirección de correo electrónico",
+          "fr": "Adresse e-mail"
+        },
+        "placeholder": "Enter your email",
+        "translationsPlaceholder": {
+          "es": "Ingresa tu correo electrónico",
+          "fr": "Entrez votre adresse e-mail"
+        },
+        "required": true,
+        "fieldId": "emailAddress",
+        "questionId": "q2"
+      },
+      {
+        "type": "date",
+        "label": "Date of Birth",
+        "translations": {
+          "es": "Fecha de nacimiento",
+          "fr": "Date de naissance"
+        },
+        "placeholder": "Select your date of birth",
+        "translationsPlaceholder": {
+          "es": "Selecciona tu fecha de nacimiento",
+          "fr": "Sélectionnez votre date de naissance"
+        },
+        "required": true,
+        "fieldId": "dateOfBirth",
+        "questionId": "q3"
+      },
+      {
+        "type": "radio",
+        "label": "Gender",
+        "translations": {
+          "es": "Género",
+          "fr": "Genre"
+        },
+        "options": [
+          {
+            "id": "option1",
+            "label": "Male",
+            "translations": { "es": "Hombre", "fr": "Homme" }
+          },
+          {
+            "id": "option2",
+            "label": "Female",
+            "translations": { "es": "Mujer", "fr": "Femme" }
+          },
+          {
+            "id": "option3",
+            "label": "Other",
+            "translations": { "es": "Otro", "fr": "Autre" }
+          }
+        ],
+        "required": true,
+        "fieldId": "gender",
+        "questionId": "q4"
+      },
+      {
+        "type": "selectbox",
+        "label": "Preferred Language",
+        "translations": {
+          "es": "Idioma preferido",
+          "fr": "Langue préférée"
+        },
+        "options": [
+          {
+            "id": "option1",
+            "label": "English",
+            "translations": { "es": "Inglés", "fr": "Anglais" }
+          },
+          {
+            "id": "option2",
+            "label": "Spanish",
+            "translations": { "es": "Español", "fr": "Espagnol" }
+          },
+          {
+            "id": "option3",
+            "label": "French",
+            "translations": { "es": "Francés", "fr": "Français" }
+          }
+        ],
+        "placeholder": "Select your preferred language",
+        "translationsPlaceholder": {
+          "es": "Selecciona tu idioma preferido",
+          "fr": "Sélectionnez votre langue préférée"
+        },
+        "required": true,
+        "fieldId": "preferredLanguage",
+        "questionId": "q5"
+      },
+      {
+        "type": "checkbox",
+        "label": "Agree to Terms and Conditions",
+        "translations": {
+          "es": "Aceptar los términos y condiciones",
+          "fr": "Accepter les termes et conditions"
+        },
+        "options": [
+          {
+            "id": "option1",
+            "label": "I agree",
+            "translations": {
+              "es": "Estoy de acuerdo",
+              "fr": "Je suis d'accord"
+            }
+          }
+        ],
+        "required": true,
+        "fieldId": "termsAgreement",
+        "questionId": "q6"
+      }
+    ],
+    "sections": [
+      {
+        "sectionId": 1,
+        "sectionName": "Basic"
+      },
+      {
+        "sectionId": 2,
+        "sectionName": "Basic 2"
+      },
+      {
+        "sectionId": 3,
+        "sectionName": "Basic 3"
+      }
+    ],
+    "fields": [
+      {
+        "sectionId": 2,
+        "type": "matrix__feedcheckback",
+        "label": "Skills Assessment",
+        "translations": {
+          "es": "Evaluación de habilidades",
+          "fr": "Évaluation des compétences"
+        },
+        "rows": [
+          {
+            "id": "row1",
+            "label": "JavaScript",
+            "translations": { "es": "JavaScript", "fr": "JavaScript" }
+          },
+          {
+            "id": "row2",
+            "label": "Python",
+            "translations": { "es": "Python", "fr": "Python" }
+          },
+          {
+            "id": "row3",
+            "label": "React",
+            "translations": { "es": "React", "fr": "React" }
+          },
+          {
+            "id": "row4",
+            "label": "PHP",
+            "translations": { "es": "PHP", "fr": "PHP" }
+          }
+        ],
+        "columns": [
+          {
+            "id": "col1",
+            "label": "Beginner",
+            "translations": { "es": "Principiante", "fr": "Débutant" }
+          },
+          {
+            "id": "col2",
+            "label": "Intermediate",
+            "translations": { "es": "Intermedio", "fr": "Intermédiaire" }
+          },
+          {
+            "id": "col3",
+            "label": "Advanced",
+            "translations": { "es": "Avanzado", "fr": "Avancé" }
+          }
+        ],
+        "required": true,
+        "fieldId": "skillsAssessment4",
+        "questionId": "q34"
+      },
+
+      {
+        "sectionId": 2,
+        "type": "matrix_radio_feedback",
+        "label": "Skills Assessment",
+        "translations": {
+          "es": "Evaluación de habilidades",
+          "fr": "Évaluation des compétences"
+        },
+        "rows": [
+          {
+            "id": "row1",
+            "label": "JavaScript",
+            "translations": { "es": "JavaScript", "fr": "JavaScript" }
+          },
+          {
+            "id": "row2",
+            "label": "Python",
+            "translations": { "es": "Python", "fr": "Python" }
+          },
+          {
+            "id": "row3",
+            "label": "React",
+            "translations": { "es": "React", "fr": "React" }
+          },
+          {
+            "id": "row4",
+            "label": "PHP",
+            "translations": { "es": "PHP", "fr": "PHP" }
+          }
+        ],
+        "columns": [
+          {
+            "id": "col1",
+            "label": "Beginner",
+            "translations": { "es": "Principiante", "fr": "Débutant" }
+          },
+          {
+            "id": "col2",
+            "label": "Intermediate",
+            "translations": { "es": "Intermedio", "fr": "Intermédiaire" }
+          },
+          {
+            "id": "col3",
+            "label": "Advanced",
+            "translations": { "es": "Avanzado", "fr": "Avancé" }
+          }
+        ],
+        "required": true,
+        "fieldId": "skillsAssessment3",
+        "questionId": "q33"
+      },
+
+      {
+        "sectionId": 2,
+        "type": "matrix_radio",
+        "label": "Skills Assessment",
+        "translations": {
+          "es": "Evaluación de habilidades",
+          "fr": "Évaluation des compétences"
+        },
+        "rows": [
+          {
+            "id": "row1",
+            "label": "JavaScript",
+            "translations": { "es": "JavaScript", "fr": "JavaScript" }
+          },
+          {
+            "id": "row2",
+            "label": "Python",
+            "translations": { "es": "Python", "fr": "Python" }
+          },
+          {
+            "id": "row3",
+            "label": "React",
+            "translations": { "es": "React", "fr": "React" }
+          },
+          {
+            "id": "row4",
+            "label": "PHP",
+            "translations": { "es": "PHP", "fr": "PHP" }
+          }
+        ],
+        "columns": [
+          {
+            "id": "col1",
+            "label": "Beginner",
+            "translations": { "es": "Principiante", "fr": "Débutant" }
+          },
+          {
+            "id": "col2",
+            "label": "Intermediate",
+            "translations": { "es": "Intermedio", "fr": "Intermédiaire" }
+          },
+          {
+            "id": "col3",
+            "label": "Advanced",
+            "translations": { "es": "Avanzado", "fr": "Avancé" }
+          }
+        ],
+        "required": true,
+        "fieldId": "skillsAssessment2",
+        "questionId": "q32"
+      },
+
+      {
+        "sectionId": 2,
+        "type": "matrix_checkbox",
+        "label": "Skills Assessment",
+        "translations": {
+          "es": "Evaluación de habilidades",
+          "fr": "Évaluation des compétences"
+        },
+        "rows": [
+          {
+            "id": "row1",
+            "label": "JavaScript",
+            "translations": { "es": "JavaScript", "fr": "JavaScript" }
+          },
+          {
+            "id": "row2",
+            "label": "Python",
+            "translations": { "es": "Python", "fr": "Python" }
+          },
+          {
+            "id": "row3",
+            "label": "React",
+            "translations": { "es": "React", "fr": "React" }
+          },
+          {
+            "id": "row4",
+            "label": "PHP",
+            "translations": { "es": "PHP", "fr": "PHP" }
+          }
+        ],
+        "columns": [
+          {
+            "id": "col1",
+            "label": "Beginner",
+            "translations": { "es": "Principiante", "fr": "Débutant" }
+          },
+          {
+            "id": "col2",
+            "label": "Intermediate",
+            "translations": { "es": "Intermedio", "fr": "Intermédiaire" }
+          },
+          {
+            "id": "col3",
+            "label": "Advanced",
+            "translations": { "es": "Avanzado", "fr": "Avancé" }
+          }
+        ],
+        "required": true,
+        "fieldId": "skillsAssessment",
+        "questionId": "q7"
+      },
+
+      {
+        "sectionId": 1,
+        "type": "textbox",
+        "label": "What is the agreement?",
+        "translations": {
+          "es": "Nombre completo",
+          "fr": "Nom complet"
+        },
+        "placeholder": "placeholder text",
+        "translationsPlaceholder": {
+          "es": "Ingresa tu nombre completo",
+          "fr": "Entrez votre nom complet"
+        },
+        "required": true,
+        "fieldId": "agreement",
+        "questionId": "q1"
+      },
+      {
+        "sectionId": 1,
+        "type": "email",
+        "label": "Work Email Address",
+        "translations": {
+          "es": "Dirección de correo electrónico",
+          "fr": "Adresse e-mail"
+        },
+        "placeholder": "Enter your work email",
+        "translationsPlaceholder": {
+          "es": "Ingresa tu correo electrónico",
+          "fr": "Entrez votre adresse e-mail"
+        },
+        "required": true,
+        "fieldId": "emailAddress",
+        "questionId": "q2"
+      },
+      {
+        "sectionId": 2,
+        "type": "radio",
+        "label": "Marriage Status",
+        "translations": {
+          "es": "Género",
+          "fr": "Genre"
+        },
+        "options": [
+          {
+            "id": "option1",
+            "label": "Single",
+            "translations": { "es": "Hombre", "fr": "Homme" }
+          },
+          {
+            "id": "option2",
+            "label": "Married",
+            "translations": { "es": "Mujer", "fr": "Femme" }
+          },
+          {
+            "id": "option3",
+            "label": "Other",
+            "translations": { "es": "Otro", "fr": "Autre" }
+          }
+        ],
+        "required": true,
+        "fieldId": "marriageStatus",
+        "questionId": "q3"
+      },
+      {
+        "sectionId": 2,
+        "type": "checkbox",
+        "label": "Hobbies",
+        "translations": {
+          "es": "Aficiones",
+          "fr": "Loisirs"
+        },
+        "options": [
+          {
+            "id": "option1",
+            "label": "Reading",
+            "translations": { "es": "Lectura", "fr": "Lecture" }
+          },
+          {
+            "id": "option2",
+            "label": "Traveling",
+            "translations": { "es": "Viajar", "fr": "Voyager" }
+          },
+          {
+            "id": "option3",
+            "label": "Sports",
+            "translations": { "es": "Deportes", "fr": "Sports" }
+          },
+          {
+            "id": "option4",
+            "label": "Music",
+            "translations": { "es": "Música", "fr": "Musique" }
+          }
+        ],
+        "required": false,
+        "fieldId": "hobbies",
+        "questionId": "q4"
+      },
+      {
+        "sectionId": 3,
+        "type": "selectbox",
+        "label": "Country",
+        "translations": {
+          "es": "País",
+          "fr": "Pays"
+        },
+        "options": [
+          {
+            "id": "option1",
+            "label": "United States",
+            "translations": { "es": "Estados Unidos", "fr": "États-Unis" }
+          },
+          {
+            "id": "option2",
+            "label": "Canada",
+            "translations": { "es": "Canadá", "fr": "Canada" }
+          },
+          {
+            "id": "option3",
+            "label": "United Kingdom",
+            "translations": { "es": "Reino Unido", "fr": "Royaume-Uni" }
+          },
+          {
+            "id": "option4",
+            "label": "Australia",
+            "translations": { "es": "Australia", "fr": "Australie" }
+          }
+        ],
+        "placeholder": "Select your country",
+        "translationsPlaceholder": {
+          "es": "Selecciona tu país",
+          "fr": "Sélectionnez votre pays"
+        },
+        "required": true,
+        "fieldId": "country",
+        "questionId": "q5"
+      },
+      {
+        "sectionId": 3,
+        "type": "textarea",
+        "label": "About Yourself",
+        "translations": {
+          "es": "Sobre ti",
+          "fr": "À propos de vous"
+        },
+        "placeholder": "Tell us something about yourself",
+        "translationsPlaceholder": {
+          "es": "Cuéntanos algo sobre ti",
+          "fr": "Parlez-nous de vous"
+        },
+        "required": false,
+        "fieldId": "aboutYourself",
+        "questionId": "q6"
+      }
+    ]
+  }
+]

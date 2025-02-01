@@ -1,0 +1,51 @@
+{
+  "sectionId": 2,
+  "type": "matrix__feedcheckback",
+  "label": "Skills Assessment",
+  "translations": {
+    "es": "Evaluación de habilidades",
+    "fr": "Évaluation des compétences"
+  },
+  "rows": [
+    {
+      "id": "row1",
+      "label": "JavaScript",
+      "translations": { "es": "JavaScript", "fr": "JavaScript" }
+    },
+    {
+      "id": "row2",
+      "label": "Python",
+      "translations": { "es": "Python", "fr": "Python" }
+    },
+    {
+      "id": "row3",
+      "label": "React",
+      "translations": { "es": "React", "fr": "React" }
+    },
+    {
+      "id": "row4",
+      "label": "PHP",
+      "translations": { "es": "PHP", "fr": "PHP" }
+    }
+  ],
+  "columns": [
+    {
+      "id": "col1",
+      "label": "Beginner",
+      "translations": { "es": "Principiante", "fr": "Débutant" }
+    },
+    {
+      "id": "col2",
+      "label": "Intermediate",
+      "translations": { "es": "Intermedio", "fr": "Intermédiaire" }
+    },
+    {
+      "id": "col3",
+      "label": "Advanced",
+      "translations": { "es": "Avanzado", "fr": "Avancé" }
+    }
+  ],
+  "required": true,
+  "fieldId": "skillsAssessment4",
+  "questionId": "q34"
+}
