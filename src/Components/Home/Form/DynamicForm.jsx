@@ -42,6 +42,7 @@ const DynamicForm = () => {
           formDescription: currentForm.formDescription,
           typeOfListing: currentForm.typeOfListing,
           time: currentForm.time,
+          languages: currentForm.languages,
         });
         setInitialFields(currentForm.initialFields || []);
         setSections(currentForm.sections || []);
@@ -136,14 +137,22 @@ const DynamicForm = () => {
                     borderRadius:
                       option.translations?.[selectedLanguage]?.length === 1 ||
                       option.label.length === 1
-                        ? "80%"
+                        ? "50%"
                         : "50px",
-
-                    textAlign:
+                    textAlign: "center",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    width:
                       option.translations?.[selectedLanguage]?.length === 1 ||
                       option.label.length === 1
-                        ? "center"
-                        : "left",
+                        ? "50px"
+                        : "auto",
+                    height:
+                      option.translations?.[selectedLanguage]?.length === 1 ||
+                      option.label.length === 1
+                        ? "50px"
+                        : "auto",
                   }}
                   htmlFor={`${field.fieldId}-${option.id}`}
                   id="radio-label"
@@ -310,12 +319,14 @@ const DynamicForm = () => {
             </table>
           </div>
         );
+
       case "matrix_radio_feedback":
         return (
           <div className="matrix-container">
             <div className="matrix-row">
               <div
                 className="matrix-cell"
+                id="metr-cell"
                 style={{
                   borderBottomLeftRadius: "50px",
                   borderTopLeftRadius: "50px",
@@ -343,59 +354,68 @@ const DynamicForm = () => {
                 </div>
               ))}
             </div>
-            <br />
-            {field.rows.map((row) => (
-              <div className="matrix-row" key={row.id}>
-                <div
-                  className="matrix-cell"
-                  style={{
-                    borderBottomLeftRadius: "50px",
-                    borderTopLeftRadius: "50px",
-                  }}
-                >
-                  {row.translations?.[selectedLanguage] || row.label}
-                </div>
 
-                {field.columns.map((column, colIndex) => (
+            {field.rows.map((row) => (
+              <>
+                <p className="pholder">
+                  {row.translations?.[selectedLanguage] || row.label}{" "}
+                </p>
+
+                <div className="matrix-row" key={row.id}>
                   <div
                     className="matrix-cell"
-                    key={column.id}
-                    style={
-                      colIndex === field.columns.length - 1
-                        ? {
-                            borderTopRightRadius: "50px",
-                            borderBottomRightRadius: "50px",
-                          }
-                        : {}
-                    }
+                    style={{
+                      borderBottomLeftRadius: "50px",
+                      borderTopLeftRadius: "50px",
+                    }}
                   >
-                    <div className="radio-group" style={{ marginTop: "25px" }}>
-                      <input
-                        type="radio"
-                        name={`${field.fieldId}-${row.id}`}
-                        value={column.id}
-                        checked={
-                          formData[field.fieldId]?.[row.id] === column.id
-                        }
-                        onChange={() => {
-                          setFormData((prev) => ({
-                            ...prev,
-                            [field.fieldId]: {
-                              ...prev[field.fieldId],
-                              [row.id]: column.id,
-                            },
-                          }));
-                        }}
-                        required={field.required}
-                      />
-                    </div>
+                    <p> {row.translations?.[selectedLanguage] || row.label} </p>
                   </div>
-                ))}
-              </div>
+
+                  {field.columns.map((column, colIndex) => (
+                    <div
+                      className="matrix-cell"
+                      key={column.id}
+                      style={
+                        colIndex === field.columns.length - 1
+                          ? {
+                              borderTopRightRadius: "50px",
+                              borderBottomRightRadius: "50px",
+                            }
+                          : {}
+                      }
+                    >
+                      <div
+                        className="radio-group"
+                        style={{ marginTop: "25px" }}
+                      >
+                        <input
+                          type="radio"
+                          name={`${field.fieldId}-${row.id}`}
+                          value={column.id}
+                          checked={
+                            formData[field.fieldId]?.[row.id] === column.id
+                          }
+                          onChange={() => {
+                            setFormData((prev) => ({
+                              ...prev,
+                              [field.fieldId]: {
+                                ...prev[field.fieldId],
+                                [row.id]: column.id,
+                              },
+                            }));
+                          }}
+                          required={field.required}
+                        />
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </>
             ))}
-            <br />
           </div>
         );
+
       case "matrix__feedcheckback":
         return (
           <div className="matrix-container">
@@ -503,7 +523,6 @@ const DynamicForm = () => {
             <br />
           </div>
         );
-
       case "checkbox":
         return (
           <div className="checkbox-group">
@@ -512,9 +531,9 @@ const DynamicForm = () => {
                 key={option.id}
                 style={{
                   display: "flex",
-                  alignItems: "center", // ensures vertical alignment of input and label
+                  alignItems: "center",
                   justifyContent: "center",
-                  gap: "10px", // manage spacing between checkbox and label
+                  gap: "10px",
                   textAlign: "center",
                   flexWrap: "wrap",
                 }}
@@ -537,6 +556,7 @@ const DynamicForm = () => {
                       : currentValues.filter((v) => v !== option.id);
                     handleChange(field.fieldId, newValues);
                   }}
+                  required={field.required}
                 />
                 <label
                   htmlFor={`${field.fieldId}-${option.id}`}
@@ -548,7 +568,6 @@ const DynamicForm = () => {
             ))}
           </div>
         );
-
       default:
         return null;
     }
@@ -711,9 +730,7 @@ const DynamicForm = () => {
 
   return (
     <>
-      {" "}
       <div>
-        {" "}
         <Navbar />
         <div className="form-container">
           <h2 className="form-title">{formMeta.formName}</h2>
@@ -723,6 +740,7 @@ const DynamicForm = () => {
             value={selectedLanguage}
             onChange={(e) => setSelectedLanguage(e.target.value)}
           >
+            {/* map less */}
             <option value="en">English</option>
             <option value="es">Español</option>
             <option value="fr">Français</option>

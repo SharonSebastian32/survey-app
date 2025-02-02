@@ -41,7 +41,6 @@ textarea {
   color: #000000;
 }
 
-/* SelectBox.css */
 .select-container {
   margin: 16px 0;
   position: relative;
@@ -155,22 +154,6 @@ form .checkbox-group {
   padding-left: 10px;
 }
 
-/* #submit-btn,
-#single-sbmt-btn {
-  padding: 12px 24px;
-  border: none;
-  border-radius: 10px;
-  background-color: #b9ff66;
-  color: #000;
-  font-size: 20px;
-  border-radius: 30px;
-  font-weight: 400;
-  width: 30%;
-  cursor: pointer;
-  align-items: center;
-  justify-content: center;
-} */
-
 #submit-btn,
 #single-sbmt-btn {
   padding: 12px 24px;
@@ -181,7 +164,6 @@ form .checkbox-group {
   font-size: 20px;
   border-radius: 30px;
   font-weight: 400;
-
   cursor: pointer;
   align-items: center;
   justify-content: center;
@@ -294,7 +276,6 @@ form h3 {
   cursor: pointer;
 }
 
-/* Basic table styling */
 .matrix-checkbox {
   overflow-x: auto;
   padding: 1rem;
@@ -380,10 +361,7 @@ input[type="checkbox"]:focus {
   background-color: #e0e0e0;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
-/* 
-.radio-group2 {
-  background-color: red;
-} */
+
 .radio-item2 {
   display: flex;
   flex-direction: row;
@@ -455,4 +433,3 @@ input[type="checkbox"]:focus {
   outline: none;
   border-color: #949596;
 }
- 
